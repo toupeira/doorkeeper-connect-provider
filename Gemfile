@@ -47,3 +47,4 @@ end
 
 gem 'devise'
 gem 'doorkeeper'
+gem 'doorkeeper-openid_connect'
