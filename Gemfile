@@ -47,4 +47,4 @@ end
 
 gem 'devise'
 gem 'doorkeeper'
-gem 'doorkeeper-openid_connect'
+gem 'doorkeeper-openid_connect', git: 'https://github.com/panter/doorkeeper-openid_connect.git'
