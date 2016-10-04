@@ -1,5 +1,6 @@
 source 'https://rubygems.org'
 
+ruby '2.3.1'
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '4.2.7.1'
@@ -45,6 +46,11 @@ group :development do
   gem 'spring'
 end
 
+# OpenID Connect dependencies
 gem 'devise'
 gem 'doorkeeper'
 gem 'doorkeeper-openid_connect', git: 'https://github.com/panter/doorkeeper-openid_connect.git'
+
+# Heroku dependencies
+gem 'rails_12factor'
+gem 'puma'

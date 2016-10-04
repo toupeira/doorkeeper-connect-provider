@@ -8,7 +8,11 @@ Doorkeeper::OpenidConnect.configure do
     User.find_by(id: access_token.resource_owner_id)
   end
 
-  issuer 'http://localhost:3000'
+  if Rails.env.production?
+    issuer 'https://doorkeeper-connect-provider.herokuapp.com/'
+  else
+    issuer 'http://localhost:3000/'
+  end
 
   subject do |resource_owner|
     # Example implementation:
