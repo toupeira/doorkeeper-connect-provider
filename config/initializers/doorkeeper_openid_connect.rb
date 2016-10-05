@@ -22,13 +22,7 @@ Doorkeeper::OpenidConnect.configure do
   # Expiration time on or after which the ID Token MUST NOT be accepted for processing. (default 120 seconds).
   # expiration 600
 
-  # claims do
-  #   claim :_foo_ do |resource_owner|
-  #     resource_owner.foo
-  #   end
-
-  #   claim :_bar_ do |resource_owner|
-  #     resource_owner.bar
-  #   end
-  # end
+  claims do
+    normal_claim :email, &:email
+  end
 end
