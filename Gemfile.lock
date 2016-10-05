@@ -1,6 +1,6 @@
 GIT
-  remote: https://github.com/panter/doorkeeper-openid_connect.git
-  revision: 3bd564641c5b9f9223772572d4377d4c08a5888e
+  remote: https://github.com/doorkeeper-gem/doorkeeper-openid_connect.git
+  revision: 5f65eca519c4f15d9d9c75d5fa30784ec1095e44
   specs:
     doorkeeper-openid_connect (1.0.3)
       doorkeeper (~> 4.0)
@@ -97,12 +97,10 @@ GEM
     mini_portile2 (2.1.0)
     minitest (5.9.1)
     multi_json (1.12.1)
-    nokogiri (1.6.8)
+    nokogiri (1.6.8.1)
       mini_portile2 (~> 2.1.0)
-      pkg-config (~> 1.1.7)
     orm_adapter (0.5.0)
     pg (0.18.4)
-    pkg-config (1.1.7)
     puma (2.15.3)
     rack (1.6.4)
     rack-test (0.6.3)
