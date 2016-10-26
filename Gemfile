@@ -50,6 +50,7 @@ end
 gem 'devise'
 gem 'doorkeeper'
 gem 'doorkeeper-openid_connect', git: 'https://github.com/doorkeeper-gem/doorkeeper-openid_connect.git'
+gem 'pry-byebug'
 
 # Heroku dependencies
 gem 'rails_12factor'
