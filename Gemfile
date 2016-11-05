@@ -49,7 +49,9 @@ end
 # OpenID Connect dependencies
 gem 'devise'
 gem 'doorkeeper'
+#gem 'doorkeeper', path: '../doorkeeper'
 gem 'doorkeeper-openid_connect', git: 'https://github.com/doorkeeper-gem/doorkeeper-openid_connect.git'
+#gem 'doorkeeper-openid_connect', path: '../doorkeeper-openid_connect'
 gem 'pry-byebug'
 
 # Heroku dependencies

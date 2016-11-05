@@ -1,6 +1,6 @@
 GIT
   remote: https://github.com/doorkeeper-gem/doorkeeper-openid_connect.git
-  revision: c73dc984c3d1fc0a1b7953af2b3fa27928233e9b
+  revision: e0eba0953a22f96dd4fa8b90a6cc69617246c7b8
   specs:
     doorkeeper-openid_connect (1.0.3)
       doorkeeper (~> 4.0)
@@ -144,8 +144,7 @@ GEM
       rake (>= 0.8.7)
       thor (>= 0.18.1, < 2.0)
     rake (11.3.0)
-    rdoc (4.2.2)
-      json (~> 1.4)
+    rdoc (4.3.0)
     responders (2.3.0)
       railties (>= 4.2.0, < 5.1)
     sass (3.4.22)
@@ -215,4 +214,4 @@ RUBY VERSION
    ruby 2.3.1p112
 
 BUNDLED WITH
-   1.13.2
+   1.13.6

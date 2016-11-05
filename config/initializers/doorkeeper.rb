@@ -4,8 +4,20 @@ Doorkeeper.configure do
 
   # This block will be called to check whether the resource owner is authenticated or not.
   resource_owner_authenticator do
-    session[:user_return_to] = request.fullpath
-    current_user || redirect_to(new_user_session_url)
+    if current_user
+      current_user
+    else
+      session[:user_return_to] = request.fullpath
+      redirect_to(new_user_session_url)
+      nil
+    end
+  end
+
+  resource_owner_from_credentials do
+    user = User.find_for_database_authentication(:email => params[:username])
+    if user && user.valid_for_authentication? { user.valid_password?(params[:password]) }
+      user
+    end
   end
 
   # If you want to restrict access to the web interface for adding oauth authorized applications, you need to declare the block below.
