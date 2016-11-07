@@ -1,6 +1,6 @@
 GIT
   remote: https://github.com/doorkeeper-gem/doorkeeper-openid_connect.git
-  revision: e0eba0953a22f96dd4fa8b90a6cc69617246c7b8
+  revision: 30db23e0c59a0fce09a4709cb0abab9761513ea4
   specs:
     doorkeeper-openid_connect (1.0.3)
       doorkeeper (~> 4.0)

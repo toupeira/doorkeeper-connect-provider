@@ -18,8 +18,8 @@ Doorkeeper::OpenidConnect.configure do
     resource_owner.current_sign_in_at
   end
 
-  reauthenticate_resource_owner do |resource_owner|
-    store_location_for resource_owner, request.fullpath
+  reauthenticate_resource_owner do |resource_owner, return_to|
+    store_location_for resource_owner, return_to
     sign_out resource_owner
     redirect_to new_user_session_url
   end
