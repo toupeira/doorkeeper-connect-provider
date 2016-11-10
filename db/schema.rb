@@ -57,7 +57,7 @@ ActiveRecord::Schema.define(version: 20161105175208) do
 
   add_index "oauth_applications", ["uid"], name: "index_oauth_applications_on_uid", unique: true, using: :btree
 
-  create_table "oauth_openid_connect_nonces", force: :cascade do |t|
+  create_table "oauth_openid_requests", force: :cascade do |t|
     t.integer "access_grant_id", null: false
     t.string  "nonce",           null: false
   end
