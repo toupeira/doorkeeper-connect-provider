@@ -49,8 +49,9 @@ end
 # OpenID Connect dependencies
 gem 'devise'
 gem 'doorkeeper'
-#gem 'doorkeeper', path: '../doorkeeper'
-gem 'doorkeeper-openid_connect', git: 'https://github.com/doorkeeper-gem/doorkeeper-openid_connect.git'
+# gem 'doorkeeper', path: '../doorkeeper'
+# gem 'doorkeeper-openid_connect'
+gem 'doorkeeper-openid_connect', git: 'https://github.com/nashby/doorkeeper-openid_connect.git', branch: 'feature/implicit-flow'
 #gem 'doorkeeper-openid_connect', path: '../doorkeeper-openid_connect'
 gem 'pry-byebug'
 
