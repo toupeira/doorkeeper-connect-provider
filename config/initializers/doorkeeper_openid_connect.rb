@@ -6,8 +6,7 @@ Doorkeeper::OpenidConnect.configure do
     issuer 'http://localhost:3000/'
   end
 
-  jws_private_key File.read(Rails.root.join('config/private.pem'))
-  jws_public_key File.read(Rails.root.join('config/public.pem'))
+  signing_key File.read(Rails.root.join('config/private.pem'))
 
   resource_owner_from_access_token do |access_token|
     # Example implementation:
@@ -33,6 +32,6 @@ Doorkeeper::OpenidConnect.configure do
   # expiration 600
 
   claims do
-    normal_claim :email, &:email
+    normal_claim(:email) { |user| user.email }
   end
 end
